@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/Shoesland1.png">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d9daef74ea.js" crossorigin="anonymous"></script>
+
+    <title>Pixie - Products</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/tooplate-main.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/cekout.css">
+    <link rel="stylesheet" href="assets/css/pembayaran.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/parsley.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bs-stepper/dist/css/bs-stepper.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<!--
+Tooplate 2114 Pixie
+https://www.tooplate.com/view/2114-pixie
+-->
+  </head>
+
+  <body>
+    <!--- Cursor Start -->
+    <div id="cursor"></div>
+    <!-- Cursor End -->
+     <!-- Start Loader -->
+     <div id="loadingDiv">
+      <div class="loader"></div>
+    </div>
+    <!-- End Loader -->
+    
+    <i class="bi bi-brightness-high-fill" id="toggleDark"></i>
+
+    <!-- Pre Header -->
+    <div id="pre-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <span color="white"><b>Be Yourself, Be Your Style</b></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="assets/images/Logooo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="products.php">Kembali</a>
+              </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Page Content -->
+
+    <!-- Items Starts Here -->
+    <div class="featured-page">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <div class="section-heading">
+              <div class="line-dec"></div>
+              <h1>Checkout Pembayaran</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bs-stepper">
+        <div class="bs-stepper-header" role="tablist">
+          <!-- your steps here -->
+          <div class="step" data-target="#Cekout-part">
+            <button type="button" class="step-trigger" role="tab" aria-controls="Cekout-part" id="Cekout-part-trigger">
+              <span class="bs-stepper-circle">1</span>
+              <span class="bs-stepper-label">Checkout</span>
+            </button>
+          </div>
+          <div class="line"></div>
+          <div class="step" data-target="#Pembayaran-part">
+            <button type="button" class="step-trigger" role="tab" aria-controls="Pembayaran-part" id="Pembayaran-part-trigger">
+              <span class="bs-stepper-circle">2</span>
+              <span class="bs-stepper-label">Pembayaran</span>
+            </button>
+          </div>
+          <div class="line"></div>
+          <div class="step" data-target="#Konfirmasi-part">
+            <button type="button" class="step-trigger" role="tab" aria-controls="Konfirmasi-part" id="Konfirmasi-part-trigger">
+              <span class="bs-stepper-circle">3</span>
+              <span class="bs-stepper-label">Konfirmasi</span>
+            </button>
+          </div>
+        </div>
+        <div class="bs-stepper-content">
+          <!-- your steps content here -->
+          <div id="Cekout-part" class="content" role="tabpanel" aria-labelledby="Cekout-part-trigger">
+              <div class="column info">
+                  <form action="" data-parsley-validate="" id="checkout-form">
+                  <div class="accordions">
+                      <div class="accordion-item show information">
+                          <div class="accordion-head">
+                              <h2>Information</h2>
+                              <i class="fa fa-chevron-down"></i>
+                          </div>
+                          <div class="accordion-body">
+                                  <h4>Contact Details</h4>
+                                  <div class="form-row contact">
+                                      <div><input type="text" name="firstname" placeholder="Nama Depan" class="form-input" data-parsley-trigger="keyup" required></div>
+                                      <div><input type="text" name="lastname" placeholder="Nama Belakang" class="form-input" data-parsley-trigger="keyup" required></div>
+                                      <div><input type="email" name="email" placeholder="Email" class="form-input" data-parsley-trigger="keyup" required></div>
+                                      <div><input type="Handphone" name="No Handphone" placeholder="No Handphone" class="form-input" data-parsley-pattern="^[\d\+\-\.\(\)\/\s]*$" data-parsley-trigger="keyup"></div>
+                                  </div>
+                                  <h4>Address</h4>
+                                  <div class="form-row address">
+                                      <div><input type="text" name="address" placeholder="Alamat Lengkap" class="form-input" data-parsley-trigger="keyup" required></div>
+                                      <div><input type="text" name="address2" placeholder="Nama Jalan atau hal lain" class="form-input"></div>
+                                  <div class="grid-3">
+                                      <div><select name="Provinsi" class="form-input" id="country">
+                                          <option value="">Provinsi...</option>
+                                          <option value="">Jawa Barat</option>
+                                          <option value="">DKI Jakarta</option>
+                                          <option value="">Banten</option>
+                                      </select></div>
+                                      <div class="grid-2">
+                                          <div><input type="text" name="state" placeholder="Kota/Kab" class="form-input" data-parsley-trigger="keyup" required></div>
+                                          <div><input type="text" name="postcode" placeholder="Kode Pos" class="form-input"></div>
+                                      </div>
+                                      </div>
+                                      <div><input type="text" name="city" placeholder="Kelurahan" class="form-input"></div>
+                                      <div><input type="tel" name="phone" placeholder="Kecamatan" class="form-input" data-parsley-trigger="keyup" required></div>
+                                  </div>
+                                  <div class="form-btn to-shipping">Metode Pengiriman</div>
+                          </div>
+                              
+                          </div>
+                          <div class="accordion-item shipping">
+                              <div class="accordion-head">
+                                  <h2>Metode Pengiriman</h2>
+                                  <i class="fa fa-chevron-down"></i>
+                              </div>
+                              <div class="accordion-body">
+                                  <div class="shipping-option">
+                                    <label for="metode-pengiriman">Metode Pengiriman</label>
+                                      <select id="metode-pengiriman" required>
+                                          <option value="">Pilih Metode Pengiriman</option>
+                                          <option value="JNE">JNE</option>
+                                          <option value="J&T">J&T</option>
+                                          <option value="POS Indonesia">POS Indonesia</option>
+                                       </select>
+                                </div>
+                                  <button type="submit" class="form-btn to-payment" onclick="stepper.next()">Selanjutnya</button>
+
+                              </div>
+                          </div>
+              <div class="column cart-items">
+                  <h4>Keranjang</h4>
+                  <table style="width: 100%" class="checkout">
+                      <th style="width: 20%"></th>
+                      <th style="width: 40%">Item</th>
+                      <th style="width: 20%">Qty</th>
+                      <th style="width: 20%">Price</th>
+                      <tr class="cartItems">
+                          <td class="product-img"><img src="assets/images/golfbw1.jpg" alt=""></td>
+                          <td class="product-title">Air Jordan 1 High Golf Black White</td>
+                          <td class="product-quantity">1</td>
+                          <td class="product-price">IDR 3.250.000</td>
+                      </tr>
+                      <tr>
+                          <td class="product-img"><img
+                                  src="assets/images/ventela1.jpg"
+                                  alt="iphone"></td>
+                          <td class="product-title">entela Nevertoolavish Noir Low <span>Colour: Blue</span></td>
+                          <td class="product-qty"><input type="number" id="qty" name="qty" min="1" max="5" value="1"></td>
+                          <td class="price">IDR 449.800</td>
+                      </tr>
+                  </table>
+                  <table style="width: 100%;">
+                      <tr>
+                        <div class="total">
+                          RP.<span id="biaya-pengiriman">0</span>
+                        </div>
+                      </tr>
+                      <tr>
+                          <td>Total</td>
+                          <td style="text-align: right;" id="total-harga">0</td>
+                      </tr>
+                    </table>
+                 </div>
+              </div>
+             </div>
+          </div>
+          
+          <div id="Pembayaran-part" class="content" role="tabpanel" aria-labelledby="Pembayaran-part-trigger">
+            <div class="container">
+
+                <form action="">
+            
+                    <div class="row">
+            
+                        <div class="col">
+            
+                            <h3 class="title">Proses pembayaran</h3>
+            
+                            <div class="inputBox">
+                                <span>Nama Panjanh :</span>
+                                <input type="text" required="" placeholder="Rahma">
+                            </div>
+                            <div class="inputBox">
+                                <span>Email :</span>
+                                <input type="email" placeholder="example@gmail.com">
+                            </div>
+                            <div class="inputBox">
+                                <span>Alamat :</span>
+                                <input type="text" placeholder="Alamat Lengkap">
+                            </div>
+                            <div class="inputBox">
+                                <span>Provinsi :</span>
+                                <input type="text" placeholder="DKI Jakarta">
+                            </div>
+            
+                            <div class="flex">
+                                <div class="inputBox">
+                                    <span>Kota/Kab :</span>
+                                    <input type="text" placeholder="Jakarta Selatan">
+                                </div>
+                                <div class="inputBox">
+                                    <span>Kode Pos :</span>
+                                    <input type="text" placeholder="12110 ">
+                                </div>
+                            </div>
+            
+                        </div>
+            
+                        <div class="col">
+            
+                            <h3 class="title">payment</h3>
+            
+                            <div class="inputBox">
+                                <span>Metode Pembayaran :</span>
+                                <img src="images/card_img.png" alt="">
+                            </div>
+                            <div class="inputBox">
+                                <span>name on card :</span>
+                                <input type="text" placeholder="mr. john deo">
+                            </div>
+                            <div class="inputBox">
+                                <span>credit card number :</span>
+                                <input type="number" placeholder="1111-2222-3333-4444">
+                            </div>
+                            <div class="inputBox">
+                                <span>exp month :</span>
+                                <input type="text" placeholder="january">
+                            </div>
+            
+                            <div class="flex">
+                                <div class="inputBox">
+                                    <span>exp year :</span>
+                                    <input type="number" placeholder="2022">
+                                </div>
+                                <div class="inputBox">
+                                    <span>CVV :</span>
+                                    <input type="text" placeholder="1234">
+                                </div>
+                            </div>
+            
+                        </div>
+                
+                    </div>
+                    <button type="submit" class="submit-btn" onclick="stepper.next()">Selanjutnya</button>
+                    <button type="submit" class="submit-btn" onclick="stepper.previous()">Sebelumnya</button>
+                </form>
+
+            </div>    
+          </div>
+          <div id="Konfirmasi-part" class="content" role="tabpanel" aria-labelledby="Konfirmasi-part-trigger">
+            <a href="Berhasil.html"></a>
+            <button type="submit" class="button" onclick="Berhasil.html()">Cekout</button>
+            <a href="Gagal.html"></a>
+            <button type="submit" class="button" onclick="stepper.previous()">Sebelumnya</button>
+          </div>
+        </div>
+      </div>
+    <!-- Featred Page Ends Here -->
+    
+
+
+    <!-- Subscribe Form Starts Here -->
+    <div class="subscribe-form">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <div class="line-dec"></div>
+              <h1>Subscribe on Shoesland now!</h1>
+            </div>
+          </div>
+          <div class="col-md-8 offset-md-2">
+            <div class="main-content">
+              <p>Godard four dollar toast prism, authentic heirloom raw denim messenger bag gochujang put a bird on it celiac readymade vice.</p>
+              <div class="container">
+                <form id="subscribe" action="" method="get">
+                  <div class="row">
+                    <div class="col-md-7">
+                      <fieldset>
+                        <input name="email" type="text" class="form-control" id="email" 
+                        onfocus="if(this.value == 'Your Email...') { this.value = ''; }" 
+                    	onBlur="if(this.value == '') { this.value = 'Your Email...';}"
+                    	value="Your Email..." required="">
+                      </fieldset>
+                    </div>
+                    <div class="col-md-5">
+                      <fieldset>
+                        <button type="submit" id="form-submit" class="button">Subscribe Now!</button>
+                      </fieldset>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Subscribe Form Ends Here -->
+
+    
+    <!-- Footer Starts Here -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="logo">
+              <img src="assets/images/Logooo.png" alt="">
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="footer-menu">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="social-icons">
+              <ul>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Ends Here -->
+
+
+    <!-- Sub Footer Starts Here -->
+    <div class="sub-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="copyright-text">
+              <p>Terima Kasih atas kepercayaan anda menggunakan <strong>pixie</strong>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Sub Footer Ends Here -->
+        <!--  Start Customer Service -->
+        <div class="fab-container">
+          <div class="fab fab-icon-holder" style="background-color:#ffffff; padding:5px">
+              
+              <img src="assets/images/callcenter.png" class="img-fluid" alt="">
+          </div>
+          <ul class="fab-options">
+                              <li>
+                      <a href="https://instagram.com/shoessland.id" class="text-decoration-none" target="_blank">
+                          <div class="fab-icon-holder"
+                              style="background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);">
+                              <i class="fa fa-instagram"></i>
+                          </div>
+                      </a>
+                  </li>
+                                          <li>
+                      <a href="https://wa.me/6282163175894?text=Hai%20ka,%20Saya%20mau%20tanya%20dong" class="text-decoration-none" target="_blank">
+                          <div class="fab-icon-holder" style="background-color: #25D366;">
+                              <i class="fa fa-whatsapp"></i>
+                          </div>
+                      </a>
+                  </li>
+          </a>
+      </div>
+      <!--  End Customer Service -->
+      
+
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Additional Scripts -->
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs-stepper/dist/js/bs-stepper.min.js"></script>
+    <script src="assets/js/isotope.js"></script>
+    <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/common.js" defer></script>
+
+    <script>
+       document.getElementById("metode-pengiriman").addEventListener("change", function() {
+      var selectedOption = this.value;
+      var biayaPengiriman = 0;
+
+      if (selectedOption === "JNE") {
+        biayaPengiriman = 5000;
+      } else if (selectedOption === "J&T") {
+        biayaPengiriman = 10000;
+      } else if (selectedOption === "POS Indonesia") {
+        biayaPengiriman = 15000;
+      }
+
+      document.getElementById("biaya-pengiriman").textContent = biayaPengiriman;
+      var totalHarga = 100000 + biayaPengiriman;
+      document.getElementById("total-harga").textContent = totalHarga;
+    });
+    </script>
+
+
+    <script language = "text/Javascript"> 
+      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+      function clearField(t){                   //declaring the array outside of the
+      if(! cleared[t.id]){                      // function makes it static and global
+          cleared[t.id] = 1;  // you could use true and false, but that's more typing
+          t.value='';         // with more chance of typos
+          t.style.color='#fff';
+          }
+      }
+    </script>
+     <script src="assets/js/common.js"></script>
+    <script src="assets/js/cekout.js"></script>
+    <script src="assets/js/stepper.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/payment.js"></script>
+    <script src="vendor/jquery/jquery.js"></script>
+    <script src="assets/js/cekout.js"></script>
+
+
+
+
+
+  </body>
+
+</html>
