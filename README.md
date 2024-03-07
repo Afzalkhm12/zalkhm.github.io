@@ -33,6 +33,7 @@
 </p>
 
 ![screenshot](https://github.com/Afzalkhm12/zalkhm.github.io/blob/master/assets/images/home.png)
+![screenshot](https://github.com/Afzalkhm12/zalkhm.github.io/blob/master/assets/images/home2.png)
 
 
 ## How To Use
